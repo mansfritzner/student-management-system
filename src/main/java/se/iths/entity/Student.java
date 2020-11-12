@@ -13,13 +13,13 @@ public class Student {
     private Long id;
 
     private String firstName;
-    private String lastname;
+    private String lastName;
     private String email;
     private String phoneNumber;
 
     public Student(String firstName, String lastname, String email, String phoneNumber) {
         this.firstName = firstName;
-        this.lastname = lastname;
+        this.lastName = lastname;
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
@@ -44,12 +44,12 @@ public class Student {
         this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastname) {
+        this.lastName = lastname;
     }
 
     public String getEmail() {

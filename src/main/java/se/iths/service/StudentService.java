@@ -35,7 +35,7 @@ public class StudentService {
 
 
     public static List<Student> getByLastName(String name){
-        return entityManager.createQuery("SELECT e FROM Student e WHERE e.lastname = \'"+ name + "\'", Student.class).getResultList();
+        return entityManager.createQuery("SELECT e FROM Student e WHERE e.lastName = \'"+ name + "\'", Student.class).getResultList();
     }
 
 
