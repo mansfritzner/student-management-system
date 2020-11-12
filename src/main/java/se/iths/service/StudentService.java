@@ -33,6 +33,7 @@ public class StudentService {
         return student;
     }
 
+
     public static List<Student> getByLastName(String name){
         return entityManager.createQuery("SELECT e FROM Student e WHERE e.lastname = \'"+ name + "\'", Student.class).getResultList();
     }
