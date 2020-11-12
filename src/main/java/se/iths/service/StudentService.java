@@ -11,7 +11,7 @@ import javax.transaction.Transactional;
 public class StudentService {
 
     @PersistenceContext
-    private static EntityManager entityManager;
+    EntityManager entityManager;
    
 
     public Student createStudent(Student student) {
@@ -34,7 +34,7 @@ public class StudentService {
     }
 
 
-    public static List<Student> getByLastName(String name){
+    public List<Student> getByLastName(String name){
         return entityManager.createQuery("SELECT e FROM Student e WHERE e.lastName = \'"+ name + "\'", Student.class).getResultList();
     }
 

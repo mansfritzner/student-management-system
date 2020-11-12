@@ -52,7 +52,7 @@ public class StudentRest {
     @Path("getByLastName/{name}")
     @GET
     public Response getByLastName(@PathParam("name") String name) {
-        List<Student> students = StudentService.getByLastName(name);
+        List<Student> students = studentService.getByLastName(name);
         return Response.ok(students).build();
 }
 
