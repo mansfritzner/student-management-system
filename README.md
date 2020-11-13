@@ -3,6 +3,7 @@ Starting project | Java EE assignment | JU19 | ITHS
 _________________________________________________________
 ### NEW 
 POST http://localhost:8080/se.iths/api/v1/student/add
+
 Content-Type: application/json
 
 {
